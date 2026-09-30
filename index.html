@@ -1,229 +1,411 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
-        .header{text-align:center; padding:15px 15px; background: #ffffff;font-size: 20px;}
-        .h6{text-align:center; }
-        .hero{ background: #e0c2c2; color:#070000;font-size: 20px; padding:50px;}
-        .btn{background:beige; color: black; border:0; border-radius: 25px;}
-        .section{padding: 30px;font-size: 20px;}
-        .info-boxes{padding:15px; display:flex; gap:20px; margin-top:25px; flex-wrap:wrap;font-size: 20px;}
-        .info{ background:#f8f4f4; padding:15px 20px; border-radius:10px; flex:1; min-width:200px;font-size: 20px;}
-        .edu{padding:15px; color:black; background:white;font-size: 20px; padding:15px 20px;}
-        .skill{padding:15px; color:black; background:white;font-size: 20px;}
-        .certi{padding:15px; color:black; background:white;font-size: 20px;}
-        .exp{padding:15px; color:black; background:white; font-size: 20px;}
-        .col-sm-7{padding:80px 20px; color:black; background:rgb(255, 255, 255); font-size: 20px;border-radius: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); }
-        form{padding:15px; color:black; background:white; font-size: 17px; border-color: #eec8c8; border-radius: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.15);}
-        .btn-blue{background:#e0c2c2; color: black; border: 0; border-radius: 25px; padding: 10px 25px; font-weight: bold;cursor: pointer; width: 100%; margin-top: 15px;}
-        footer{text-align:center; padding:20px; background: #eedcdc; font-size: 20px; color:#070000;}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .header {
+        text-align: center;
+        padding: 15px 15px;
+        background: #ffffff;
+        font-size: 20px;
+      }
+      .h6 {
+        text-align: center;
+      }
+      .hero {
+        background: #e0c2c2;
+        color: #070000;
+        font-size: 20px;
+        padding: 50px;
+      }
+      .btn {
+        background: beige;
+        color: black;
+        border: 0;
+        border-radius: 25px;
+      }
+      .section {
+        padding: 30px;
+        font-size: 20px;
+      }
+      .info-boxes {
+        padding: 15px;
+        display: flex;
+        gap: 20px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        font-size: 20px;
+      }
+      .info {
+        padding: 15px 20px;
+        border-radius: 10px;
+        flex: 1;
+        min-width: 200px;
+        font-size: 20px;
+
+        button {
+          background:#e0c2c2 ;
+          color: black;
+          border: 0;
+          border-radius: 25px;
+        }
+      }
+      .edu {
+        padding: 15px;
+        color: black;
+        background: white;
+        font-size: 20px;
+        padding: 15px 20px;
+      }
+      .skill {
+        padding: 15px;
+        color: black;
+        background: white;
+        font-size: 20px;
+      }
+      .certi {
+        padding: 15px;
+        color: black;
+        background: white;
+        font-size: 20px;
+      }
+      .exp {
+        padding: 15px;
+        color: black;
+        background: white;
+        font-size: 20px;
+      }
+      .col-sm-7 {
+        padding: 80px 20px;
+        color: black;
+        background: rgb(255, 255, 255);
+        font-size: 20px;
+        border-radius: 25px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+      form {
+        padding: 15px;
+        color: black;
+        background: white;
+        font-size: 17px;
+        border-color: #eec8c8;
+        border-radius: 25px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      }
+      .btn-blue {
+        background: #e0c2c2;
+        color: black;
+        border: 0;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 15px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #eedcdc;
+        font-size: 20px;
+        color: #070000;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
-    <div class="header" style=" padding: 20px 10px;">
-    <div class="container">
-  <div class="row">
-    <div class="col">
-       <h1><strong>VERSHA</strong></h1>
+    <div class="header" style="padding: 20px 10px">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1><strong>VERSHA</strong></h1>
+          </div>
+          <div class="col"></div>
+          <div class="col">
+            <h5 style="padding: 10px 10px">Home</h5>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col">
+
+    <!--Body-->
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col" img>
+            <img
+              src="varsha2.jpeg"
+              alt="image"
+              style="
+                width: 200px;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+              "
+            />
+          </div>
+          <div class="col">
+            <p>Web Developer</p>
+            <h1><strong> Hi, I’m Versha.</strong></h1>
+            <p>
+              I’m completed BCA and have basic knowledge of web development.<br>
+              I’m a quick learner and eager to improve my skills.
+            </p>
+            <div class="btn">
+              <a href="varsha2.jpeg" download="varsha2.jpeg"
+                ><button type="button" class="btn btn-light">Download CV</button></a
+              >
+            </div>
+            <div class="btn">
+              <a href="#contact-form"
+                ><button type="button" class="btn btn-light">Contact Me</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col">
-       <h5 style=" padding: 10px 10px;">Home</h5>
+
+    <div class="form-box">
+      <div class="section">
+        <div class="container">
+          <h2><strong>ABOUT ME</strong></h2>
+          <p>
+            I am BCA student with a strong interest in computer applications and
+            software development. I have basic knowledge of programming
+            languages such as C, Java, PHP, MYSQL. I am eager to learn new
+            technologies, improve my skills, and gain practical experience. I am
+            a hardworking, quick learner and a team player who is always ready
+            to take on new challenges and contribute positively to an
+            organization.
+          </p>
+
+          <div class="info-boxes">
+            <div class="container">
+              <div class="row">
+                <div class="info">
+                  <a href="tel:+7477257753"
+                    ><button type="button" class="btn btn-light">
+                      📞 +917477257753
+                    </button></a
+                  >
+                </div>
+                <div class="info">
+                  <a href="https://maps.app.goo.gl/3zqPDr3K7oaF7tLn6?g_st=aw"
+                    ><button type="button" class="btn btn-light">
+                      📍 Jamuna Colliery Anuppur (M.P.)
+                    </button>
+                  </a>
+                </div>
+                <div class="info">
+                  <a href="mailto:vk7070859@gmail.com"
+                    ><button type="button" class="btn btn-light">
+                      ✉️ vk7070859@gmail.com
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu">
+          <div class="container">
+            <h2><strong>EDUCATION</strong></h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>2023-2026</h3>
+                <p>Dr. C.V. Raman University, kargi road kota, Bilaspur</p>
+              </div>
+              <div class="col">
+                <h3>Class 10+2</h3>
+                <p>Kendriya Vidyalaya Jamuna colliery Anuppur (M.P.)</p>
+              </div>
+              <div class="col">
+                <h3>Class 10</h3>
+                <p>Kendriya Vidyalaya Jamuna colliery Anuppur (M.P.)</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>Bachelor of Computer Application</h3>
+                <ul>
+                  <li>CGPA - 8.5</li>
+                  <li>
+                    I have completed my graduation in Bachelor of Computer
+                    Application (BCA) with foundational knowledge of
+                    programming, databases, and web development. eager to learn,
+                    adapt, and contribute to a professional work environment.
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Qualification: Higher Secondary</h3>
+                <ul>
+                  <li>CGPA - 7.0</li>
+                  <li>Stream: Science</li>
+                  <li>Board: CBSE</li>
+                  <li>Year of passing: 2023</li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Qualification: Higher Secondary</h3>
+                <ul>
+                  <li>CGPA - 7.6</li>
+                  <li>Board: CBSE</li>
+                  <li>Year of passing: 2021</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="container">
+            <h2><strong>SKILLS</strong></h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>Basic PHP</li>
+                  <li>Mysql</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Communication skills</li>
+                  <li>Teamwork</li>
+                  <li>Ms Office</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Canva</li>
+                  <li>Creativity</li>
+                  <li>Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certi">
+          <div class="container">
+            <h2><strong>CERTIFICATES</strong></h2>
+            <ul>
+              <li>Empowered AI leads up : skill and Innovation 2026</li>
+              <li>
+                National Conference of Recent advancement and innovation in
+                computer sciences and information technology (NCRAICSIT-24) :
+                TOWARDS VIKSIT BHARAT @2047 - I presented Research paper titled
+                An overview of the use of machine learning and artificial
+                intelligence.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp">
+          <div class="container">
+            <h2><strong>EXPERIENCE</strong></h2>
+            <p>
+              Currently I am doing an Internship in Web Development from
+              Cinematickrs which is located in Ranchi and it is known for
+              digital Marketing Agency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h2><strong>PROJECT</strong></h2>
+            <strong>College Administration System:</strong>
+            <p>
+              Developed a web-based College Administration Management System to
+              streamline student and college administration processes. The
+              system enables efficient management of student records, faculty
+              information, courses, attendence, examinations, fees and academic
+              reports through a centralized platform.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-box">
+              <form id="contact-form">
+                <legend>
+                  <h2><strong>CONTACT</strong></h2>
+                </legend>
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label">Name</label>
+                  <input
+                    id="name"
+                    class="form-control mt-2"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    id="name"
+                    class="form-control mt-2"
+                    placeholder="your@email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label"
+                    >Message</label
+                  >
+                  <input
+                    id="name"
+                    class="form-control mt-2"
+                    placeholder="Tell me about your project and Enquiry"
+                  />
+                </div>
+                <button class="btn-blue w-100 mt-3">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div></div>
 
-
-  <!--Body-->
-  <div class="hero">
-  <div class="container">
-  <div class="row">
-    <div class="col" img>
-       <img src="varsha2.jpeg" alt="image" style="width:200px; border-radius:50%; display: block; margin:0 auto;">
+    <div class="id-footer">
+      <footer>
+        © 2026 Versha • Designed & built with simplicity • All rights reserved
+      </footer>
     </div>
-    <div class="col">
-        <p>Web Developer</p>
-      <h1><strong> Hi, I’m Versha.</strong></h1> 
-      <p>I’m completed BCA and have basic knowledge of web development.<br> I’m a quick learner and eager to improve my skills.</p>
-      
-      <div class="btn"><button type="button" class="btn btn-light">Download CV</button></div>
-      <div class="btn"><button type="button" class="btn btn-light">Contact Me</button></div>
-    
-    </div>
-  </div>
-</div></div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
 
- <div class="form-box">
-<div class="section">
-<div class="container">
-    <h2><strong>ABOUT ME</strong></h2>
-    <p>I am BCA student with a strong interest in computer applications and software development. I have basic knowledge of programming languages such as C, Java, PHP, MYSQL. I am eager to learn new technologies, improve my skills, and gain practical experience. I am a hardworking, quick learner and a team player who is always ready to take on new challenges and contribute positively to an organization. </p>
-
-<div class="info-boxes">
-<div class="container">
-  <div class="row">
-    <div class="info">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9_u0SaPuG1lsOdVvt8vW0Hp-NKev20qlVXE2lEY1X4ePZgpIDFJnrGw&s=10" style="width:20px;">+91 7477257753
-    </div>
-    <div class="info">
-       <img src="https://png.pngtree.com/png-vector/20190507/ourmid/pngtree-vector-location-icon-png-image_1024680.jpg" style="width:35px;">Jamuna Colliery Anuppur (M.P.)
-    </div>
-    <div class="info">
-        <img src="https://i.pinimg.com/736x/a1/84/0a/a1840a14b487ef2bee618d080221ec13.jpg" style="width:35px;">vk7070859@gmail.com
-    </div>
-  </div>
-</div></div></div>
-
-
-<div class="edu">
-<div class="container"><h2><strong>EDUCATION</strong></h2></div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-    <h3>2023-2026</h3>
-      <p> Dr. C.V. Raman University, kargi road kota, Bilaspur</p>
-    </div>
-    <div class="col">
-      <h3>Class 10+2</h3>
-     <p>Kendriya Vidyalaya Jamuna colliery Anuppur (M.P.)</p>
-    </div>
-    <div class="col">
-        <h3>Class 10</h3>
-      <p>Kendriya Vidyalaya Jamuna colliery Anuppur (M.P.)</p>
-    </div>
-  </div>
-</div>
-<div class="container ">
-  <div class="row">
-    <div class="col">
-      <h3>Bachelor of Computer Application</h3>
-      <ul>
-      <li>CGPA - 8.5</li>
-      <li>I have completed my graduation in Bachelor of Computer Application (BCA) with foundational knowledge of programming, databases, and web development. eager to learn, adapt, and contribute to a professional work environment.</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Qualification: Higher Secondary</h3>
-      <ul>
-      <li>CGPA - 7.0 </li>
-      <li>Stream: Science</li>
-      <li>Board: CBSE</li>
-      <li>Year of passing: 2023</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Qualification: Higher Secondary</h3>
-      <ul>
-      <li>CGPA - 7.6 </li>
-      <li>Board: CBSE</li>
-      <li>Year of passing: 2021</li>
-      </ul>
-    </div>
-  </div>
-</div></div>
-
-<div class="skill">
-    <div class="container">
-    <h2><strong>SKILLS</strong></h2>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <ul>
-      <li>HTML/CSS</li>
-      <li>Basic PHP</li>
-      <li>Mysql</li>
-      </ul>
-    </div>
-    <div class="col">
-      <ul>
-      <li>Communication skills</li>
-      <li>Teamwork</li>
-      <li>Ms Office</li>
-      </ul>
-    </div>
-    <div class="col">
-      <ul>
-      <li>Canva</li>
-      <li>Creativity</li>
-      <li>Design</li>
-      </ul>
-    </div>
-  </div>
-</div></div>
-
-
-<div class="certi">
-<div class="container">
-    <h2><strong>CERTIFICATES</strong></h2>
-    <ul>
-    <li>Empowered AI leads up : skill and Innovation 2026</li>
-    <li>National Conference of Recent advancement and innovation in computer sciences and information technology (NCRAICSIT-24) : TOWARDS VIKSIT BHARAT @2047 - I presented Research paper titled An overview of the use of machine learning and artificial intelligence.</li>
-    </ul>
-</div>
-</div>
-
-
-
-<div class="exp">
-<div class="container">
-    <h2><strong>EXPERIENCE</strong></h2>
-    <P>Currently I am doing an Internship in Web Development from Cinematickrs which is located in Ranchi and it is known for digital Marketing Agency.</P>
-</div>
-</div></div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-7" >
-      <h2><strong>PROJECT</strong></h2>
-      <strong>College Administration System:</strong><p>Developed a web-based College Administration Management System to streamline student and college administration processes. The system enables efficient management of student records, faculty information, courses, attendence, examinations, fees and academic reports through a centralized platform.</p>
-  
-    </div>
-    <div class="col-sm-5">
-      <div class="form-box">
-
-                    <form>
-                    <legend><h2><strong>CONTACT</strong></h2></legend>
-                    <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Name</label>
-                    <input id="name" class="form-control mt-2" placeholder="Your name">
-                    </div>
-
-                    <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Email</label>
-                    <input id="name" class="form-control mt-2" placeholder="your@email">
-                    </div>
-                     
-                    <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Message</label>
-                    <input id="name" class="form-control mt-2" placeholder="Tell me about your project and Enquiry">
-                    </div>
-                    <button  class="btn-blue w-100 mt-3">Send Message</button>
-
-                    
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  
-
-<div class="id-footer">
-    <footer>© 2026 Versha • Designed & built with simplicity • All rights reserved</footer>
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html> 
